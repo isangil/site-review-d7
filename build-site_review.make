@@ -7,6 +7,6 @@ includes[] = "drupal-org-core.make"
 ; Download Site Review install profile.
 projects[site_review][type] = profile
 projects[site_review][download][type] = "git"
-projects[site_review][download][url] = "git@github.com:isangil/site_review.git"
+projects[site_review][download][url] = "git@github.com:isangil/site_review_d7.git"
 projects[site_review][download][branch] = "7.x-1.x"
 projects[site_review][subdir] = ""
