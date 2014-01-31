@@ -3,7 +3,7 @@
 /**
  * Implements hook_token_info().
  */
-function deims_token_info() {
+function site_review_token_info() {
 
   $info['tokens']['site']['station-acronym'] = array(
     'name' => t('Station acronym'),
@@ -17,7 +17,7 @@ function deims_token_info() {
 /**
  * Implements hook_tokens().
  */
-function deims_tokens($type, $tokens, array $data = array(), array $options = array()) {
+function site_review_tokens($type, $tokens, array $data = array(), array $options = array()) {
   $langcode = !empty($options['lanuage']) ? $options['language']->language : NULL;
   $sanitize = !empty($options['sanitize']);
   $replacements = array();
