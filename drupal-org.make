@@ -41,9 +41,6 @@ projects[entity][subdir] = "contrib"
 ; @see https://drupal.org/node/1780646
 projects[entity][patch][] = "http://drupal.org/files/entity-entity_access-1780646-107.patch"
 
-projects[entitycache][version] = "1.x-dev"
-projects[entitycache][subdir] = "contrib"
-
 projects[entityreference][version] = "1.0"
 projects[entityreference][subdir] = "contrib"
 ; Allow the 'Default' view mode to be selected in formatters
