@@ -15,3 +15,36 @@ of all the information above. Just drop it in a web enabled folder on a server, 
 provider, and install following the usual Drupal profile installation steps.
 
 This site can be adapted for small meetings too.
+
+## Requirements ##
+
+* [Base Drupal 7 requirements](http://drupal.org/requirements)
+* PHP 5.3+
+* [Drush](http://drush.ws/)
+* [Git](http://git-scm.com/)
+
+## Instructions ##
+
+The following instructions assume that you clone this profile into a directory
+'above' your web server root. The web server root directory in these examples
+is _www_.
+
+### Installing ###
+
+Installing the profile involved 4 steps.
+
+1.  Clone the profile.
+2.  Build the profile into your web root.
+3.  Create a database for your site to connect to.
+4.  Navigate to your site in your web browser to complete the install process.
+
+For the example commands below, 'www' represents the complete path to your site's desired webroot.
+
+Clone the repo:
+
+* `git clone --branch 7.x-1.x git@github.com:isangil/site-review-d7.git`
+
+Build the site into your webroot:
+
+* `cd site-review-d7`
+* `drush make build-site_review.make www --prepare-install --contrib-destination=profiles/site_review`
