@@ -42,9 +42,9 @@ For the example commands below, 'www' represents the complete path to your site'
 
 Clone the repo:
 
-* `git clone --branch 7.x-1.x git@github.com:lter/site-review-d7.git`
+* `git clone --branch 7.x-1.x git@github.com:isangil/site-review-d7.git`
 
 Build the site into your webroot:
 
-* `cd site-review`
+* `cd site-review-d7`
 * `drush make build-site_review.make www --prepare-install --contrib-destination=profiles/site_review`
