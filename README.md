@@ -46,5 +46,5 @@ Clone the repo:
 
 Build the site into your webroot:
 
-cd site-review
-drush make build-site_review.make www --prepare-install --contrib-destination=profiles/site_review
+* `cd site-review`
+* `drush make build-site_review.make www --prepare-install --contrib-destination=profiles/site_review`
