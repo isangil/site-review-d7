@@ -1,0 +1,16 @@
+name = Site Review Main Menu
+description = Horizontal (superfish/jump menu) with useful links
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = site_review_main_menu
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = main-menu
+features[menu_links][] = main-menu_accomplishments:node/88
+features[menu_links][] = main-menu_agenda:agenda
+features[menu_links][] = main-menu_bibliography:biblio
+features[menu_links][] = main-menu_home:<front>
+features[menu_links][] = main-menu_outreach:outreach-list
+features[menu_links][] = main-menu_research-overview:research-overview

@@ -1,0 +1,15 @@
+name = Site Review Side Menu
+description = An extra menu in the front page with other important links to logistical documents
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = site_review_side_menu
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = menu-side-menu
+features[menu_links][] = menu-side-menu_2012-annual-report-pdf:http://mcmsitereview.lternet.edu/sites/default/files/MCMLTER_2012_Annual_Report.pdf
+features[menu_links][] = menu-side-menu_clothing-list:node/78
+features[menu_links][] = menu-side-menu_logistics:node/79
+features[menu_links][] = menu-side-menu_mcm-lter-site-review-booklet-pdf:http://mcmsitereview.lternet.edu/sites/default/files/MCM_LTER_Site_Review_Booklet.pdf
+features[menu_links][] = menu-side-menu_principal-investigators:pi

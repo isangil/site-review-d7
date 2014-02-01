@@ -1,0 +1,10 @@
+name = Site Review Research Article Tags
+description = A vocabulary to sort out the research overview articles for the site review
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = site_review_research_article_tags
+dependencies[] = features
+dependencies[] = taxonomy
+features[features_api][] = api:2
+features[taxonomy][] = tags

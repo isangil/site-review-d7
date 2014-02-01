@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Site Review Outreach Views feature.
+ */
+
+include_once 'site_review_outreach_views.features.inc';
