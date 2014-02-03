@@ -211,6 +211,7 @@ function site_review_install_user() {
 
   $account = user_load(1);
   $account->roles[$admin_role->rid] = $admin_role->name;
+//  $account->data['admin_select'] = 'admin_menu';
   user_save($account);
 
   // Create the Site Review roles.
@@ -271,9 +272,22 @@ function site_review_form_install_configure_form_alter(&$form, $form_state) {
   // Disable update notifications by default.
   $form['update_notifications']['update_status_module']['#default_value'] = array();
 
+  // Add an environment selector.
+  // @todo Add a helpful #description to this element.
+  $form['site_information']['environment'] = array(
+    '#type' => 'select',
+    '#title' => t('Environment'),
+    '#options' => array(
+      'development' => st('Development'),
+      'production' => st('Production'),
+    ),
+    '#default_value' => variable_get('environment', 'development'),
+    '#required' => TRUE,
+  );
+
   $form['#submit'][] = 'site_review_form_install_configure_form_submit';
 }
-
+//not sure we need this hook.
 function site_review_form_install_configure_form_submit($form, &$form_state) {
   variable_set('environment', $form_state['values']['environment']);
   module_invoke_all('environment_switch', $form_state['values']['environment'], NULL);
@@ -329,9 +343,9 @@ function site_review_form_install_configure_form_submit($form, &$form_state) {
 *  return $form;
 *}
 *
-*function site_review_select_enhancements_form_submit($form, &$form_state) {
-*  if ($modules = array_keys(array_filter($form_state['values']['modules']))) {
-*    module_enable($modules);
-*  }
-*}
+function site_review_select_enhancements_form_submit($form, &$form_state) {
+  if ($modules = array_keys(array_filter($form_state['values']['modules']))) {
+    module_enable($modules);
+  }
+}
 */

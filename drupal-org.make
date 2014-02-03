@@ -50,7 +50,7 @@ projects[entityreference][patch][] = "http://drupal.org/files/2035699-formatter-
 projects[entity_view_mode][version] = "1.0-rc1"
 projects[entity_view_mode][subdir] = "contrib"
 
-projects[features][version] = "1.x-dev"
+projects[features][version] = "2.0"
 projects[features][subdir] = "contrib"
 
 projects[field_permissions][version] = "1.0-beta2"
