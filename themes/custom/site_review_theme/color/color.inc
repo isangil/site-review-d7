@@ -441,6 +441,28 @@ $info = array(
         'sticky'   => '#bdbdbd',
       ),
     ),
+    'lterantarctic' => array(
+      'title' => t('LTER Ice'),
+      'colors' => array(
+        'base'     => '#d6d5cd',
+        'page'     => '#ffffff',
+        'sitename' => '#414343',
+        'slogan'   => '#6b6c67',
+        'header'   => '#cbcac9',
+        'mmenu'    => '#6a718a',
+        'link'     => '#6b8eb6',
+        'top'      => '#e7ecec',
+        'bottom'   => '#f2f6f7',
+        'ftop'     => '#ffffff',
+        'fbottom'  => '#949ab4',
+        'text'     => '#242121',
+        'blockh'   => '#ffffff',
+        'blockht'  => '#e8f1f4',
+        'blockbg'  => '#f4fafc',
+        'borders'  => '#5b5d7c',
+        'sticky'   => '#f7f7f7',
+      ),
+    ),
   ),
 
   // CSS files (excluding @import) to rewrite with new color scheme.

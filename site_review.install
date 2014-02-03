@@ -38,6 +38,8 @@ function site_review_install() {
   // Contrib modules
   site_review_install_admin_menu();
 
+  site_review_install_admin_select();
+
   variable_set('menu_rebuild_needed', TRUE);
 
   // Clear any normal messages from being displayed.
@@ -174,7 +176,7 @@ function site_review_install_system() {
   $form_state = array();
   form_load_include($form_state, 'inc', 'system', 'system.admin');
   $form_state['build_info']['args'][0] = SITE_REVIEW_DEFAULT_THEME;
-  $form_state['values']['scheme'] = 'deepblue';
+  $form_state['values']['scheme'] = 'lterantarctic';
   drupal_form_submit('system_theme_settings', $form_state);
 
   // Set up the ISO 8601 date format.
@@ -211,7 +213,7 @@ function site_review_install_user() {
 
   $account = user_load(1);
   $account->roles[$admin_role->rid] = $admin_role->name;
-//  $account->data['admin_select'] = 'admin_menu';
+  $account->data['admin_select'] = 'admin_menu';
   user_save($account);
 
   // Create the Site Review roles.
@@ -219,6 +221,16 @@ function site_review_install_user() {
   $role->name = 'content contributor';
   $role->weight = 2;
   user_role_save($role);
+}
+/**
+  * Profile install tasks for the admin_select module.
+  */
+ function site_review_install_admin_select() {
+   $admin_role = user_role_load_by_name('administrator');
+   variable_set('admin_select_defaults', array(
+   $admin_role->rid => array('admin_select_default' => 'admin_menu', 'weight' => -2),
+   DRUPAL_AUTHENTICATED_RID => array('admin_select_default' => 'toolbar', 'weight' => -1),
+ ));
 }
 
 /**

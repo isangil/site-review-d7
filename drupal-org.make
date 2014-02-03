@@ -11,6 +11,9 @@ projects[addressfield][subdir] = "contrib"
 projects[admin_menu][version] = "3.0-rc4"
 projects[admin_menu][subdir] = "contrib"
 
+projects[admin_select][version] = "1.3"
+projects[admin_select][subdir] = "contrib"
+
 projects[biblio][version] = "1.0-rc7"
 projects[biblio][subdir] = "contrib"
 
@@ -201,12 +204,6 @@ libraries[flexslider][download][type] = "get"
 libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/archive/master.zip"
 libraries[flexslider][download][subtree] = "FlexSlider-master"
 libraries[flexslider][directory_name] = "flexslider"
-
-; Currently using a fork of the Chosen module that includes the Chosen library.
-;libraries[chosen][download][type] = "get"
-;libraries[chosen][download][url] = "https://github.com/koenpunt/chosen/archive/option_adding.zip"
-;libraries[chosen][download][subtree] = "chosen-option_adding"
-;libraries[chosen][directory_name] = "chosen"
 
 libraries[superfish][download][type] = "get"
 libraries[superfish][download][url] = "https://github.com/mehrpadin/Superfish-for-Drupal/archive/1.x.zip"
