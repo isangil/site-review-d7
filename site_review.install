@@ -63,6 +63,16 @@ function site_review_install_block() {
     ),
     array(
       'module' => 'system',
+      'delta' => 'main-menu',
+      'theme' => SITE_REVIEW_DEFAULT_THEME,
+      'status' => 1,
+      'weight' => -20,
+      'region' => 'menu_bar',
+      'pages' => '',
+      'cache' => -1,
+    ),
+    array(
+      'module' => 'system',
       'delta' => 'main',
       'theme' => SITE_REVIEW_DEFAULT_THEME,
       'status' => 1,
