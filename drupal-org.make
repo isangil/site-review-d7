@@ -164,7 +164,7 @@ projects[token_formatters][subdir] = "contrib"
 projects[url][version] = "1.x"
 projects[url][subdir] = "contrib"
 
-projects[views][version] = "3.7"
+projects[views][version] = "3.8"
 projects[views][subdir] = "contrib"
 
 projects[views_bulk_operations][version] = "3.1" 
