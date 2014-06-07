@@ -3,4 +3,4 @@ core = 7.x
 
 ; Drupal core
 projects[drupal][type] = core
-projects[drupal][version] = 7.26
+projects[drupal][version] = 7.28
