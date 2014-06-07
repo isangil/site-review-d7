@@ -35,7 +35,7 @@ projects[eck][patch][] = "http://drupal.org/files/1969394-eck-entity-access-alte
 projects[elements][version] = "1.x-dev"
 projects[elements][subdir] = "contrib"
 
-projects[email][version] = "1.2"
+projects[email][version] = "1.3"
 projects[email][subdir] = "contrib"
 
 projects[entity][version] = "1.1"
@@ -84,8 +84,7 @@ projects[filefield_sources][patch][] = "http://drupal.org/files/2006436-file-att
 ; @see https://drupal.org/node/2033269
 projects[filefield_sources][patch][] = "http://drupal.org/files/2033269-attach-realpath.patch"
 
-; @todo Change to 1.3 release when available.
-projects[field_group][version] = "1.x-dev"
+projects[field_group][version] = "1.4"
 projects[field_group][subdir] = "contrib"
 
 projects[flag][version] = "3.0-rc1"
