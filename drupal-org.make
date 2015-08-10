@@ -5,10 +5,10 @@ core = "7.x"
 ; Contributed modules
 ; -----------------------------------------------------------------------------
 
-projects[addressfield][version] = "1.0-beta5"
+projects[addressfield][version] = "1.1"
 projects[addressfield][subdir] = "contrib"
 
-projects[admin_menu][version] = "3.0-rc4"
+projects[admin_menu][version] = "3.0-rc5"
 projects[admin_menu][subdir] = "contrib"
 
 projects[admin_select][version] = "1.3"
@@ -17,13 +17,13 @@ projects[admin_select][subdir] = "contrib"
 projects[biblio][version] = "1.0-rc7"
 projects[biblio][subdir] = "contrib"
 
-projects[ctools][version] = "1.3"
+projects[ctools][version] = "1.7"
 projects[ctools][subdir] = "contrib"
 
-projects[date][version] = "2.7"
+projects[date][version] = "2.8"
 projects[date][subdir] = "contrib"
 
-projects[ds][version] = "2.6"
+projects[ds][version] = "2.11"
 projects[ds][subdir] = "contrib"
 
 projects[eck][version] = "2.0-rc2"
@@ -53,7 +53,7 @@ projects[entityreference][patch][] = "http://drupal.org/files/2035699-formatter-
 projects[entity_view_mode][version] = "1.0-rc1"
 projects[entity_view_mode][subdir] = "contrib"
 
-projects[features][version] = "2.0"
+projects[features][version] = "2.6"
 projects[features][subdir] = "contrib"
 
 projects[field_permissions][version] = "1.0-beta2"
@@ -99,13 +99,13 @@ projects[geofield][subdir] = "contrib"
 projects[geophp][version] = "1.7"
 projects[geophp][subdir] = "contrib"
 
-projects[helper][version] = "1.1"
+projects[helper][version] = "1.5"
 projects[helper][subdir] = "contrib"
 
 projects[libraries][version] = "2.1"
 projects[libraries][subdir] = "contrib"
 
-projects[link][version] = "1.1"
+projects[link][version] = "1.3"
 projects[link][subdir] = "contrib"
 
 projects[media][version] = "2.x-dev"
@@ -114,7 +114,7 @@ projects[media][subdir] = "contrib"
 projects[menu_block][version] = "2.3"
 projects[menu_block][subdir] = "contrib"
 
-projects[module_filter][version] = "1.7"
+projects[module_filter][version] = "2.0"
 projects[module_filter][subdir] = "contrib"
 
 projects[name][version] = "1.9"
@@ -144,6 +144,9 @@ projects[superfish][subdir] = "contrib"
 projects[taxonomy_csv][version] = "5.10"
 projects[taxonomy_csv][subdir] = "contrib"
 
+projects[telephone][version] = "1.0-alpha1"
+projects[telephone][subdir] = "contrib"
+
 projects[term_reference_tree][version] = "1.10"
 projects[term_reference_tree][subdir] = "contrib"
 ; Add filtering to the widget
@@ -159,11 +162,10 @@ projects[token_field][subdir] = "contrib"
 projects[token_formatters][version] = "1.2"
 projects[token_formatters][subdir] = "contrib"
 
-; @todo Change this to 1.1 once that version is released.
-projects[url][version] = "1.x"
+projects[url][version] = "1.0"
 projects[url][subdir] = "contrib"
 
-projects[views][version] = "3.8"
+projects[views][version] = "3.11"
 projects[views][subdir] = "contrib"
 
 projects[views_bulk_operations][version] = "3.1" 
